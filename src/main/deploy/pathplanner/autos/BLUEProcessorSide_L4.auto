@@ -1,0 +1,208 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "ProcessorSide-L4pt1"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "auton default subsystem position"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "set intake speed to passive"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "call scoring level 4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Move elevator and coral wrist"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.6
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BLUEProcessorSide-L4pt2"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Outtake coral"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BLUEProcessorSide-L4pt3.0"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "auton turtle"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BLUEProcessorSide-L4pt3.1"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0
+          }
+        },
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "intake"
+                }
+              },
+              {
+                "type": "wait",
+                "data": {
+                  "waitTime": 1.0
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "set intake speed to passive"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "BLUEProcessorSide-L4pt4.0"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "auton default subsystem position"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Move elevator and coral wrist"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.75
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BLUEProcessorSide-L4pt4.1"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Outtake coral"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BLUEProcessorSide-L4-pt5"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.8
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "auton turtle"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": false,
+  "folder": null,
+  "choreoAuto": true
+}

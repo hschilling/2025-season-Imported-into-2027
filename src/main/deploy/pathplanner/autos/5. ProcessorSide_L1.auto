@@ -1,0 +1,49 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "ProcessorSide_L1"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "call game mode coral"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "call scoring level 1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Move elevator and coral wrist"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Outtake coral"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": false,
+  "folder": null,
+  "choreoAuto": true
+}

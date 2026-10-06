@@ -1,0 +1,92 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "BLUECenterL4.0"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "auton default subsystem position"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "set intake speed to passive"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "call scoring level 4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Move elevator and coral wrist"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.6
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BLUECenterL4.1"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Outtake coral"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BLUECenterL4.2"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "turtle"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": false,
+  "folder": null,
+  "choreoAuto": true
+}
